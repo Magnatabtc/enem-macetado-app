@@ -16,8 +16,6 @@ import {
   type DailyInfo,
   type MeResponse,
   type StreakInfo,
-  type User,
-  type Weights,
 } from './api'
 import { readErrorMessage } from './lib/format'
 
@@ -214,19 +212,4 @@ export function useAuth(): AuthContextValue {
   const context = useContext(AuthContext)
   if (!context) throw new Error('useAuth precisa estar dentro de <AuthProvider>')
   return context
-}
-
-/** Atualiza os pesos locais depois do onboarding ou de uma edição no perfil. */
-export function useApplyWeights(): (weights: Weights, user?: User) => void {
-  const { patchMe } = useAuth()
-  return useCallback(
-    (weights: Weights, user?: User) => {
-      patchMe({
-        weights,
-        onboarded: true,
-        ...(user ? { user } : {}),
-      })
-    },
-    [patchMe],
-  )
 }

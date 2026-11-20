@@ -32,7 +32,9 @@ export function ExplanationSheet({
     if (!open) return
     previousFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
     const previousOverflow = document.body.style.overflow
+    const appRoot = document.getElementById('root')
     document.body.style.overflow = 'hidden'
+    appRoot?.setAttribute('inert', '')
 
     const focusTimer = window.setTimeout(() => closeButtonRef.current?.focus(), 60)
 
@@ -47,6 +49,7 @@ export function ExplanationSheet({
     return () => {
       window.clearTimeout(focusTimer)
       window.removeEventListener('keydown', handleKeyDown)
+      appRoot?.removeAttribute('inert')
       document.body.style.overflow = previousOverflow
       previousFocusRef.current?.focus?.({ preventScroll: true })
     }

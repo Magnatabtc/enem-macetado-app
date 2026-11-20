@@ -704,11 +704,14 @@ export function TutorPanel({ open, question, onClose }: TutorPanelProps) {
     previousFocusRef.current =
       document.activeElement instanceof HTMLElement ? document.activeElement : null
     const previousOverflow = document.body.style.overflow
+    const appRoot = document.getElementById('root')
     document.body.style.overflow = 'hidden'
+    appRoot?.setAttribute('inert', '')
     const focusTimer = window.setTimeout(() => panelRef.current?.focus(), 90)
 
     return () => {
       window.clearTimeout(focusTimer)
+      appRoot?.removeAttribute('inert')
       document.body.style.overflow = previousOverflow
       previousFocusRef.current?.focus?.({ preventScroll: true })
     }

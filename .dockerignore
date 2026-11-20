@@ -1,0 +1,17 @@
+# Contexto de build (raiz do repo) — manter apenas o necessário
+.git
+.gitignore
+.github
+node_modules
+**/node_modules
+frontend/dist
+backend/api
+backend/bin
+backups
+docs/screenshots
+*.log
+.env
+.env.*
+!.env.example
+README.md
+LICENSE

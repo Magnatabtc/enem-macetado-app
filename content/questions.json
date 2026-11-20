@@ -1,0 +1,362 @@
+[
+  {
+    "subject": "matematica",
+    "topic": "Função afim",
+    "statement": "Um motorista de aplicativo cobra uma taxa fixa de R$ 5,00 no início de cada corrida e mais R$ 2,50 por quilômetro rodado. Em um dia, ele recebeu R$ 40,00 por uma única corrida, sem descontos ou acréscimos. Quantos quilômetros ele percorreu nessa corrida?",
+    "alternatives": ["10 km", "12 km", "14 km", "16 km", "18 km"],
+    "correct_index": 2,
+    "difficulty": 2,
+    "explanation": "A cobrança é dada por C = 5 + 2,5d. Igualando a 40, tem-se 2,5d = 35 e d = 14 km. Quem esquece a taxa fixa calcula 40 ÷ 2,5 = 16 km, que é a alternativa mais tentadora."
+  },
+  {
+    "subject": "matematica",
+    "topic": "Probabilidade",
+    "statement": "Uma urna contém 4 bolas vermelhas e 6 bolas azuis, todas do mesmo tamanho e indistinguíveis ao tato. Duas bolas são retiradas ao acaso, sem reposição. Qual é a probabilidade de que as duas sejam vermelhas?",
+    "alternatives": ["1/5", "2/15", "4/25", "1/3", "3/10"],
+    "correct_index": 1,
+    "difficulty": 3,
+    "explanation": "Sem reposição, o total cai para 9 na segunda retirada: (4/10) × (3/9) = 12/90 = 2/15, aproximadamente 13,3%. O valor 4/25 = 16% corresponde ao cálculo com reposição, um erro comum."
+  },
+  {
+    "subject": "matematica",
+    "topic": "Geometria plana",
+    "statement": "Uma praça circular tem 10 m de raio. No centro, será construído um canteiro quadrado de 6 m de lado, e o restante da praça será gramado. Usando π = 3,14, quantos metros quadrados de grama serão necessários, aproximadamente?",
+    "alternatives": ["264 m²", "292 m²", "300 m²", "278 m²", "314 m²"],
+    "correct_index": 3,
+    "difficulty": 3,
+    "explanation": "A área do círculo é 3,14 × 10² = 314 m² e a do quadrado é 6² = 36 m². A área gramada é 314 − 36 = 278 m². O valor 314 m² corresponde a esquecer o canteiro."
+  },
+  {
+    "subject": "matematica",
+    "topic": "Porcentagem",
+    "statement": "Uma loja aumentou em 20% o preço de um produto e, na semana seguinte, anunciou um desconto de 20% sobre o preço já aumentado. Em relação ao preço original, o preço final ficou",
+    "alternatives": ["4% menor.", "4% maior.", "igual.", "2% menor.", "20% menor."],
+    "correct_index": 0,
+    "difficulty": 3,
+    "explanation": "Aumentar 20% equivale a multiplicar por 1,20, e descontar 20%, a multiplicar por 0,80. Como 1,20 × 0,80 = 0,96, o preço final é 96% do original, ou seja, 4% menor. As variações não se cancelam porque incidem sobre bases diferentes."
+  },
+  {
+    "subject": "portugues",
+    "topic": "Figuras de linguagem",
+    "statement": "Leia o trecho: \"O silêncio gritava na sala vazia, e as paredes pareciam ouvir cada palavra.\" Nesse trecho, a expressão \"o silêncio gritava\" exemplifica qual figura de linguagem?",
+    "alternatives": ["Metonímia", "Personificação", "Hipérbole", "Antítese", "Eufemismo"],
+    "correct_index": 1,
+    "difficulty": 1,
+    "explanation": "A personificação, ou prosopopeia, atribui ação humana a um ser inanimado: o silêncio \"gritar\". Não há exagero intencional, que caracterizaria a hipérbole, nem troca de um termo por outro próximo, própria da metonímia."
+  },
+  {
+    "subject": "portugues",
+    "topic": "Coesão e conectivos",
+    "statement": "Leia: \"A prefeitura ampliou a rede de ciclovias; no entanto, o número de acidentes com ciclistas não diminuiu.\" O conectivo \"no entanto\" estabelece, entre as duas orações, uma relação de",
+    "alternatives": ["oposição", "conclusão", "explicação", "alternância", "finalidade"],
+    "correct_index": 0,
+    "difficulty": 2,
+    "explanation": "\"No entanto\" é um conectivo adversativo: contrapõe o resultado inesperado, a não redução dos acidentes, à medida tomada. \"Portanto\" indicaria conclusão, e \"porque\", explicação."
+  },
+  {
+    "subject": "portugues",
+    "topic": "Concordância verbal",
+    "statement": "Assinale a alternativa em que a concordância verbal está de acordo com a norma-padrão da língua portuguesa.",
+    "alternatives": ["Fazem dois anos que o pesquisador publicou o estudo.", "Houveram muitas críticas à proposta apresentada.", "Existe várias hipóteses sobre a origem do universo.", "Faz dois anos que o pesquisador publicou o estudo.", "Aconteceu, naquela década, várias mudanças sociais."],
+    "correct_index": 3,
+    "difficulty": 3,
+    "explanation": "O verbo \"fazer\" indicando tempo decorrido é impessoal e fica na 3ª pessoa do singular: \"Faz dois anos\". Já \"existir\" e \"acontecer\" concordam com o sujeito (\"Existem várias hipóteses\", \"Aconteceram várias mudanças\"), e \"haver\" no sentido de existir também é impessoal (\"Houve muitas críticas\")."
+  },
+  {
+    "subject": "portugues",
+    "topic": "Interpretação de texto",
+    "statement": "Leia o trecho: \"A escola prometia formar cidadãos críticos. Formou especialistas em preencher questionários.\" A crítica do enunciador se constrói",
+    "alternatives": ["pela repetição da mesma estrutura, que reforça a neutralidade da descrição.", "pelo elogio explícito à formação técnica oferecida pela escola.", "pela contraposição entre a promessa e o resultado, marcada pela mudança do verbo \"prometia\" para \"formou\".", "pela ausência de ironia, já que o texto se limita a relatar dados objetivos.", "pela defesa de que questionários são a melhor forma de avaliar o pensamento crítico."],
+    "correct_index": 2,
+    "difficulty": 3,
+    "explanation": "O efeito crítico nasce do contraste entre a expectativa criada por \"prometia\" e o desfecho reduzido a \"formou especialistas em preencher questionários\". Não há elogio nem neutralidade: a escolha lexical produz ironia."
+  },
+  {
+    "subject": "biologia",
+    "topic": "Osmose",
+    "statement": "Uma célula vegetal foi colocada em uma solução com alta concentração de soluto. Após alguns minutos, observou-se que o vacúolo diminuiu de volume e a membrana plasmática se afastou da parede celular. Esse fenômeno é chamado de",
+    "alternatives": ["turgescência, causada pela entrada de água na célula.", "hemólise, provocada pelo rompimento da membrana plasmática.", "plasmólise, decorrente da saída de água da célula por osmose.", "citólise, resultante da difusão facilitada de solutos para o meio.", "flacidez, causada pelo bombeamento ativo de água para o vacúolo."],
+    "correct_index": 2,
+    "difficulty": 3,
+    "explanation": "Em meio hipertônico, a água sai da célula por osmose, o vacúolo reduz o volume e a membrana se afasta da parede: é a plasmólise. A turgescência é o processo oposto, com entrada de água em meio hipotônico."
+  },
+  {
+    "subject": "biologia",
+    "topic": "Genética de populações",
+    "statement": "Em uma população em equilíbrio de Hardy-Weinberg, 16% dos indivíduos apresentam o fenótipo recessivo determinado por um par de alelos (A e a). Qual é a frequência esperada de indivíduos heterozigotos nessa população?",
+    "alternatives": ["24%", "32%", "36%", "48%", "60%"],
+    "correct_index": 3,
+    "difficulty": 5,
+    "explanation": "Se a frequência do genótipo aa é q² = 0,16, então q = 0,4 e p = 0,6. A frequência de heterozigotos é 2pq = 2 × 0,6 × 0,4 = 0,48, ou seja, 48%. O valor 36% corresponde a p², a frequência dos homozigotos dominantes."
+  },
+  {
+    "subject": "biologia",
+    "topic": "Sistemas sanguíneos",
+    "statement": "Um homem com sangue tipo AB e uma mulher com sangue tipo O têm um filho. Considerando o sistema ABO, qual é a probabilidade de a criança nascer com sangue tipo O?",
+    "alternatives": ["25%", "50%", "75%", "100%", "0%"],
+    "correct_index": 4,
+    "difficulty": 4,
+    "explanation": "O pai é IAIB e a mãe é ii. Os filhos só podem ser IAi (tipo A) ou IBi (tipo B), com 50% para cada, pois não há como receber dois alelos i. Logo, a probabilidade de tipo O é 0%."
+  },
+  {
+    "subject": "biologia",
+    "topic": "Ciclo do nitrogênio",
+    "statement": "Em áreas de cultivo de soja, é comum que as sementes sejam inoculadas com bactérias do gênero Rhizobium antes do plantio. Essa prática reduz a necessidade de fertilizantes nitrogenados porque essas bactérias",
+    "alternatives": ["decompõem a matéria orgânica do solo, liberando nitrato para as plantas.", "fixam o nitrogênio atmosférico e o disponibilizam em nódulos nas raízes.", "transformam o nitrato do solo em nitrogênio gasoso, devolvendo-o à atmosfera.", "realizam a fotossíntese nas raízes, produzindo aminoácidos diretamente.", "absorvem fósforo do solo e o transferem para as folhas da planta."],
+    "correct_index": 1,
+    "difficulty": 2,
+    "explanation": "Bactérias fixadoras como Rhizobium vivem em simbiose em nódulos radiculares e convertem o N2 atmosférico em compostos nitrogenados assimiláveis pela planta. A decomposição da matéria orgânica e a nitrificação envolvem outros grupos de microrganismos."
+  },
+  {
+    "subject": "quimica",
+    "topic": "Estequiometria",
+    "statement": "A combustão completa do etanol (C2H5OH) é representada por: C2H5OH + 3 O2 → 2 CO2 + 3 H2O. Considerando massas molares em g/mol: C = 12, H = 1, O = 16. Na queima completa de 46 g de etanol, a massa de CO2 produzida é de",
+    "alternatives": ["44 g", "66 g", "88 g", "132 g", "176 g"],
+    "correct_index": 2,
+    "difficulty": 4,
+    "explanation": "46 g de etanol correspondem a 1 mol, pois 2 × 12 + 6 × 1 + 16 = 46. A proporção é de 1 mol de etanol para 2 mol de CO2, ou seja, 2 × 44 = 88 g. Quem usa a proporção 1:1 obtém 44 g."
+  },
+  {
+    "subject": "quimica",
+    "topic": "Concentração de soluções",
+    "statement": "Em um laboratório, 200 mL de uma solução aquosa de NaCl a 0,5 mol/L foram diluídos pela adição de 300 mL de água destilada. Qual é a concentração final da solução, em mol/L?",
+    "alternatives": ["0,10 mol/L", "0,20 mol/L", "0,25 mol/L", "0,30 mol/L", "0,50 mol/L"],
+    "correct_index": 1,
+    "difficulty": 3,
+    "explanation": "A quantidade de soluto não muda na diluição: n = 0,5 × 0,2 = 0,1 mol. O volume final é 200 + 300 = 500 mL = 0,5 L, logo C = 0,1 ÷ 0,5 = 0,2 mol/L. Dividir a concentração por 2, obtendo 0,25, ignoraria o volume adicionado."
+  },
+  {
+    "subject": "quimica",
+    "topic": "pH e diluição",
+    "statement": "Uma solução de ácido clorídrico tem pH igual a 2. Uma alíquota dessa solução foi diluída em água até que seu volume ficasse 100 vezes maior, sem alteração da quantidade de ácido. Considerando o HCl totalmente ionizado, o pH da solução diluída será",
+    "alternatives": ["pH 0", "pH 1", "pH 2", "pH 4", "pH 6"],
+    "correct_index": 3,
+    "difficulty": 4,
+    "explanation": "Diluir 100 vezes reduz a concentração de H+ em 100 vezes: de 10⁻² para 10⁻⁴ mol/L. Como pH = −log[H+], o pH passa de 2 para 4. O pH não aumenta 100 unidades porque a escala é logarítmica."
+  },
+  {
+    "subject": "quimica",
+    "topic": "Funções orgânicas",
+    "statement": "O acetato de isoamila é o principal responsável pelo aroma de banana. Sua estrutura contém o grupamento –COO– ligado a dois carbonos. Esse grupamento caracteriza a função orgânica",
+    "alternatives": ["álcool", "aldeído", "cetona", "ácido carboxílico", "éster"],
+    "correct_index": 4,
+    "difficulty": 1,
+    "explanation": "O grupo –COO– entre dois carbonos é o grupamento funcional dos ésteres, formados pela reação entre um ácido carboxílico e um álcool. Em aldeídos e cetonas o carbono carbonílico não está ligado a esse oxigênio adicional."
+  },
+  {
+    "subject": "fisica",
+    "topic": "Cinemática",
+    "statement": "Um carro parte do repouso e acelera uniformemente a 2 m/s². Desprezando a resistência do ar, qual é a distância percorrida pelo carro nos primeiros 5 s de movimento?",
+    "alternatives": ["10 m", "20 m", "25 m", "50 m", "100 m"],
+    "correct_index": 2,
+    "difficulty": 2,
+    "explanation": "Com velocidade inicial nula, s = ½at² = ½ × 2 × 5² = 25 m. Usar s = v·t com v = at daria 50 m, pois essa fórmula vale para velocidade constante, não para movimento acelerado."
+  },
+  {
+    "subject": "fisica",
+    "topic": "Circuitos elétricos",
+    "statement": "Dois resistores, de 6 Ω e 3 Ω, são associados em paralelo e ligados a uma fonte ideal de 12 V. Qual é a corrente elétrica total fornecida pela fonte?",
+    "alternatives": ["1 A", "2 A", "3 A", "4 A", "6 A"],
+    "correct_index": 4,
+    "difficulty": 3,
+    "explanation": "Em paralelo, 1/Req = 1/6 + 1/3 = 1/2, logo Req = 2 Ω. Pela lei de Ohm, I = U/Req = 12/2 = 6 A. Somar as resistências (9 Ω) levaria a cerca de 1,3 A, próximo da alternativa 1 A, erro de quem trata a associação como série."
+  },
+  {
+    "subject": "fisica",
+    "topic": "Trabalho e energia",
+    "statement": "Uma pessoa ergue uma caixa de 10 kg do chão até uma prateleira a 2 m de altura, em movimento lento e praticamente uniforme. Adotando g = 10 m/s², qual é o trabalho realizado pela força aplicada pela pessoa?",
+    "alternatives": ["0 J", "20 J", "100 J", "200 J", "400 J"],
+    "correct_index": 3,
+    "difficulty": 2,
+    "explanation": "A força aplicada equilibra o peso, F = mg = 100 N, e o deslocamento é vertical, no mesmo sentido da força: W = F·d = 100 × 2 = 200 J. O trabalho seria nulo apenas se não houvesse deslocamento ou se força e deslocamento fossem perpendiculares."
+  },
+  {
+    "subject": "fisica",
+    "topic": "Calorimetria",
+    "statement": "Um bloco de gelo de 100 g, inicialmente a 0 °C, é totalmente derretido e a água resultante é aquecida até 20 °C. Dados: calor latente de fusão do gelo = 334 J/g; calor específico da água = 4,2 J/(g·°C). Qual é a quantidade total de calor absorvida?",
+    "alternatives": ["41,8 kJ", "8,4 kJ", "33,4 kJ", "50,2 kJ", "75,2 kJ"],
+    "correct_index": 0,
+    "difficulty": 5,
+    "explanation": "São duas etapas: fusão, Q = mL = 100 × 334 = 33.400 J, e aquecimento da água, Q = mcΔθ = 100 × 4,2 × 20 = 8.400 J. A soma dá 41.800 J, ou 41,8 kJ. Considerar apenas a fusão leva ao valor 33,4 kJ."
+  },
+  {
+    "subject": "historia",
+    "topic": "Brasil Colônia",
+    "statement": "Entre os séculos XVI e XVII, a produção açucareira foi a principal atividade econômica da América Portuguesa. Uma característica marcante dessa atividade foi",
+    "alternatives": ["a combinação de latifúndio, monocultura e escravidão.", "a pequena propriedade rural, voltada ao abastecimento do mercado interno.", "o uso exclusivo de mão de obra livre e assalariada.", "a mecanização precoce da colheita e do beneficiamento.", "a ausência de vínculos com o mercado europeu."],
+    "correct_index": 0,
+    "difficulty": 2,
+    "explanation": "O engenho açucareiro organizou-se em grandes propriedades, com cultivo quase exclusivo da cana e trabalho escravizado, sobretudo de africanos. A produção era voltada à exportação para o mercado europeu."
+  },
+  {
+    "subject": "historia",
+    "topic": "Revolução Industrial",
+    "statement": "A Revolução Industrial, iniciada na Inglaterra na segunda metade do século XVIII, teve como uma de suas consequências sociais mais marcantes",
+    "alternatives": ["a ampliação do artesanato doméstico como principal forma de produção.", "o fim do êxodo rural, com a fixação da população no campo.", "o crescimento acelerado das cidades e a formação de uma classe operária urbana.", "a redução imediata da jornada de trabalho e a proibição do trabalho infantil.", "a distribuição igualitária das terras entre camponeses e proprietários."],
+    "correct_index": 2,
+    "difficulty": 3,
+    "explanation": "A industrialização atraiu trabalhadores do campo para as cidades, formando bairros operários com condições precárias. Jornadas longas e trabalho infantil só foram limitados por leis posteriores, como as Factory Acts, e não de imediato."
+  },
+  {
+    "subject": "historia",
+    "topic": "Segunda Guerra Mundial",
+    "statement": "Em junho de 1941, a Alemanha nazista lançou a Operação Barbarossa. Esse episódio ampliou decisivamente a dimensão do conflito porque",
+    "alternatives": ["consistiu na anexação da Áustria pela Alemanha, sem reação internacional.", "foi a ofensiva japonesa contra Pearl Harbor, que levou os EUA à guerra.", "correspondeu à rendição italiana e à deposição de Mussolini.", "marcou o desembarque aliado na Normandia, abrindo a frente ocidental.", "representou a invasão da União Soviética e rompeu o pacto de não agressão germano-soviético."],
+    "correct_index": 4,
+    "difficulty": 3,
+    "explanation": "A Operação Barbarossa foi a invasão da URSS, quebrando o Pacto Molotov-Ribbentrop de 1939. O desembarque na Normandia ocorreu em 1944, e Pearl Harbor foi um ataque japonês em dezembro de 1941."
+  },
+  {
+    "subject": "historia",
+    "topic": "Ditadura militar no Brasil",
+    "statement": "O Ato Institucional nº 5 (AI-5), decretado em dezembro de 1968, aprofundou o autoritarismo do regime militar brasileiro ao",
+    "alternatives": ["convocar uma assembleia constituinte para redemocratizar o país.", "restabelecer as eleições diretas para presidente da República.", "criar o pluripartidarismo e legalizar os partidos de oposição.", "fechar o Congresso Nacional, cassar mandatos e suspender o habeas corpus.", "garantir a autonomia do Poder Judiciário e a liberdade de imprensa."],
+    "correct_index": 3,
+    "difficulty": 4,
+    "explanation": "O AI-5 fechou o Congresso, autorizou cassações, suspendeu o habeas corpus para crimes políticos e ampliou a censura, inaugurando os chamados anos de chumbo. A abertura política veio depois, ao longo da década de 1970 e do início dos anos 1980."
+  },
+  {
+    "subject": "geografia",
+    "topic": "Climatologia",
+    "statement": "Em regiões litorâneas, massas de ar úmido que chegam do oceano encontram uma serra e são forçadas a subir. Ao subir, o ar se resfria, o vapor condensa e ocorre precipitação na encosta voltada para o mar. Esse tipo de chuva é chamado de",
+    "alternatives": ["chuva orográfica, provocada pela barreira do relevo.", "chuva frontal, típica do encontro de massas de ar frias e quentes.", "chuva convectiva, resultante do aquecimento intenso do solo.", "chuva ciclônica, associada a centros de baixa pressão.", "chuva ácida, decorrente da poluição industrial."],
+    "correct_index": 0,
+    "difficulty": 2,
+    "explanation": "A chuva orográfica, ou de relevo, ocorre quando o ar úmido é forçado a ascender por uma barreira topográfica, resfriando-se e condensando. A chuva convectiva decorre do aquecimento do solo, e a frontal, do contato entre massas de ar."
+  },
+  {
+    "subject": "geografia",
+    "topic": "Cartografia",
+    "statement": "Em um mapa na escala 1:50.000, dois pontos estão separados por 2 cm. Qual é a distância real entre eles, em linha reta?",
+    "alternatives": ["100 m", "1 km", "500 m", "5 km", "10 km"],
+    "correct_index": 1,
+    "difficulty": 1,
+    "explanation": "A escala 1:50.000 indica que 1 cm no mapa equivale a 50.000 cm no terreno. Assim, 2 cm correspondem a 100.000 cm, ou 1.000 m = 1 km. Converter centímetros em quilômetros exige dividir por 100.000."
+  },
+  {
+    "subject": "geografia",
+    "topic": "Urbanização brasileira",
+    "statement": "Nas grandes metrópoles brasileiras, é comum que a população de baixa renda ocupe áreas periféricas ou de risco, enquanto os grupos de maior renda se concentram em bairros com melhor infraestrutura. Esse padrão de distribuição desigual da população no espaço urbano é chamado de",
+    "alternatives": ["conurbação", "metropolização", "gentrificação", "segregação socioespacial", "êxodo rural"],
+    "correct_index": 3,
+    "difficulty": 3,
+    "explanation": "A segregação socioespacial designa a separação da população no território urbano conforme renda e classe social, com acesso desigual a serviços e infraestrutura. Gentrificação é a valorização de uma área que expulsa moradores pobres, e conurbação é a união física de cidades vizinhas."
+  },
+  {
+    "subject": "geografia",
+    "topic": "Globalização e nova DIT",
+    "statement": "Um fenômeno característico da nova divisão internacional do trabalho, intensificada a partir da década de 1970, é",
+    "alternatives": ["a concentração exclusiva da produção industrial nos países centrais.", "o fim das desigualdades econômicas entre países centrais e periféricos.", "a redução do comércio internacional de matérias-primas.", "a desindustrialização total das economias periféricas.", "a transferência de etapas industriais intensivas em mão de obra para países periféricos, com menor custo de produção."],
+    "correct_index": 4,
+    "difficulty": 4,
+    "explanation": "Empresas transnacionais passaram a instalar filiais e a terceirizar etapas produtivas em países com mão de obra barata e menos regulação, o que caracteriza a nova DIT. Isso não eliminou as desigualdades: as atividades de maior valor agregado, como pesquisa, design e finanças, permanecem concentradas nos países centrais."
+  },
+  {
+    "subject": "filosofia",
+    "topic": "Platão",
+    "statement": "Na alegoria da caverna, Platão descreve prisioneiros que confundem sombras projetadas em uma parede com a realidade. Com essa imagem, o filósofo pretende mostrar que",
+    "alternatives": ["a política deve ser exercida por quem permanece na caverna.", "a educação filosófica é o processo de libertação do mundo das aparências em direção ao conhecimento verdadeiro.", "a realidade é inteiramente construída pelas opiniões dos indivíduos.", "o conhecimento sensível é o único acesso confiável à verdade.", "o conhecimento verdadeiro é impossível e deve ser abandonado."],
+    "correct_index": 1,
+    "difficulty": 2,
+    "explanation": "A caverna representa o mundo das aparências, a doxa, e a saída dela simboliza a educação, a paideia, que conduz ao conhecimento das Ideias, a episteme. A libertação é difícil e progressiva, por isso Platão a associa ao caminho do filósofo."
+  },
+  {
+    "subject": "filosofia",
+    "topic": "Descartes",
+    "statement": "Na Primeira Meditação, Descartes decide duvidar de tudo o que admite alguma possibilidade de dúvida. Ainda assim, conclui que não pode duvidar de que existe, pois, ao pensar, algo precisa estar pensando. Esse argumento é conhecido como",
+    "alternatives": ["o mito da caverna", "o imperativo categórico", "a dúvida pirrônica", "a tábula rasa", "o cogito, ou \"penso, logo existo\""],
+    "correct_index": 4,
+    "difficulty": 3,
+    "explanation": "O cogito, \"penso, logo existo\", é a primeira certeza indubitável a que Descartes chega: mesmo o engano generalizado pressupõe um sujeito que pensa e existe. A dúvida metódica não é cética quanto ao resultado, mas um instrumento para encontrar um fundamento seguro."
+  },
+  {
+    "subject": "filosofia",
+    "topic": "Ética kantiana",
+    "statement": "Para Kant, uma ação tem valor moral quando é praticada por dever, conforme uma máxima que possa ser universalizada, e não apenas conforme o resultado que produz. Essa posição ética é caracterizada como",
+    "alternatives": ["deontológica, pois o valor moral está na intenção e no cumprimento do dever.", "utilitarista, pois avalia as consequências da ação.", "hedonista, pois busca o prazer individual.", "relativista, pois depende dos costumes de cada sociedade.", "egoísta, pois prioriza o interesse próprio."],
+    "correct_index": 0,
+    "difficulty": 4,
+    "explanation": "A ética kantiana é deontológica: o critério do dever não são as consequências, mas o imperativo categórico, que exige universalizar a máxima da ação. O utilitarismo, em contraste, julga a ação pelas consequências, buscando o maior bem-estar para o maior número."
+  },
+  {
+    "subject": "filosofia",
+    "topic": "Foucault",
+    "statement": "Michel Foucault analisa o panóptico, modelo de prisão em que um único vigilante pode observar todos os detentos sem que estes saibam se estão sendo vistos. Para o filósofo, esse dispositivo é exemplar porque",
+    "alternatives": ["demonstra que o poder moderno só funciona pela força física explícita.", "comprova que as prisões são instituições isoladas, sem relação com outras práticas sociais.", "indica o desaparecimento das relações de poder nas sociedades contemporâneas.", "produz nos indivíduos a autovigilância, tornando o poder disciplinar mais eficiente e econômico.", "mostra que a vigilância só é eficaz quando há coerção armada permanente."],
+    "correct_index": 3,
+    "difficulty": 3,
+    "explanation": "No panóptico, a incerteza sobre estar sendo observado leva o indivíduo a controlar o próprio comportamento, interiorizando a disciplina. Foucault usa o modelo para descrever como o poder disciplinar moderno se difunde em escolas, fábricas, hospitais e prisões."
+  },
+  {
+    "subject": "sociologia",
+    "topic": "Durkheim e os fatos sociais",
+    "statement": "Émile Durkheim definiu os fatos sociais como maneiras de agir, pensar e sentir externas ao indivíduo, dotadas de poder de coerção e gerais em uma sociedade. Um exemplo que se ajusta a essa definição é",
+    "alternatives": ["a preferência pessoal por um tipo de música.", "a obrigação de seguir as normas de trânsito, com sanções para quem as descumpre.", "o sonho que uma pessoa tem durante a noite.", "uma escolha individual de lazer sem influência do grupo.", "a decisão isolada de um indivíduo sobre sua carreira."],
+    "correct_index": 1,
+    "difficulty": 2,
+    "explanation": "As normas de trânsito são exteriores ao indivíduo, exercem coerção, por meio de multas e sanções, e são compartilhadas socialmente, portanto constituem um fato social. Preferências, sonhos e decisões isoladas são individuais e não apresentam essa exterioridade e coercitividade."
+  },
+  {
+    "subject": "sociologia",
+    "topic": "Marx e a mais-valia",
+    "statement": "Na análise de Karl Marx, a mais-valia corresponde",
+    "alternatives": ["à diferença entre o valor produzido pelo trabalho e o valor pago sob a forma de salário.", "ao valor total dos salários pagos aos trabalhadores.", "ao lucro obtido exclusivamente pela venda de matérias-primas.", "à parte da produção destinada ao consumo dos próprios trabalhadores.", "ao imposto cobrado pelo Estado sobre a produção industrial."],
+    "correct_index": 0,
+    "difficulty": 3,
+    "explanation": "Marx distingue o valor criado pelo trabalho do valor da força de trabalho, que é o salário. A mais-valia é essa diferença apropriada pelo capitalista, base da exploração no modo de produção capitalista."
+  },
+  {
+    "subject": "sociologia",
+    "topic": "Weber e a dominação",
+    "statement": "Para Max Weber, a dominação legítima pode se apoiar em diferentes fundamentos. Quando um líder é obedecido por suas qualidades extraordinárias, consideradas fora do comum, tem-se a dominação",
+    "alternatives": ["tradicional, baseada nos costumes e na herança.", "legal-racional, baseada em leis e na burocracia.", "carismática, baseada nas qualidades pessoais do líder.", "patriarcal, baseada exclusivamente no parentesco.", "teocrática, baseada apenas na autoridade religiosa institucional."],
+    "correct_index": 2,
+    "difficulty": 3,
+    "explanation": "A dominação carismática se funda na crença nas qualidades excepcionais do líder, como heroísmo, santidade ou talento. A tradicional se apoia em costumes e linhagem, e a legal-racional, em normas e cargos definidos por lei."
+  },
+  {
+    "subject": "sociologia",
+    "topic": "Indústria cultural",
+    "statement": "Adorno e Horkheimer cunharam a expressão \"indústria cultural\" para criticar a produção de bens culturais em larga escala. Segundo esses autores, um efeito dessa produção é",
+    "alternatives": ["a ampliação da autonomia do público, que passa a escolher livremente entre obras únicas.", "o desaparecimento da publicidade e do consumo de massa.", "a valorização exclusiva da arte erudita em detrimento da popular.", "a redução da cultura a uma atividade estritamente artesanal.", "a padronização dos produtos culturais e a formação de uma recepção pouco crítica."],
+    "correct_index": 4,
+    "difficulty": 4,
+    "explanation": "Para os frankfurtianos, a lógica industrial aplicada à cultura padroniza os produtos e induz o público a uma atitude passiva e conformista. A crítica não é à cultura popular em si, mas à sua mercantilização e à perda de potencial crítico."
+  },
+  {
+    "subject": "ingles",
+    "topic": "Reading comprehension",
+    "statement": "Leia o texto: \"Many cities are turning empty parking lots into small parks. The change is cheap, reduces summer heat and gives residents a place to meet. Critics say the parks do not solve the lack of affordable housing, but supporters argue that unused land should serve the community now.\" De acordo com o texto, qual é a ideia principal defendida pelos apoiadores de transformar estacionamentos vazios em parques?",
+    "alternatives": ["The parks definitively solve the affordable housing problem.", "Unused land should be used by the community now, without waiting for larger solutions.", "Parking lots are more important than green areas in cities.", "The change is expensive and brings no climate benefits.", "Cities should build more parking lots downtown."],
+    "correct_index": 1,
+    "difficulty": 2,
+    "explanation": "O texto afirma que os críticos dizem que os parques não resolvem a falta de moradia acessível, mas os apoiadores defendem que \"unused land should serve the community now\", ou seja, usar já o terreno ocioso. Dizer que os parques resolvem a moradia ou que a mudança é cara contradiz diretamente o texto."
+  },
+  {
+    "subject": "ingles",
+    "topic": "Vocabulary in context",
+    "statement": "Leia a frase: \"The new policy was praised for its ambitious goals, but it was also criticized for its lofty promises, which many considered impossible to keep.\" No contexto, a palavra \"lofty\" pode ser traduzida como",
+    "alternatives": ["modestas", "detalhadas", "exageradas", "obrigatórias", "sigilosas"],
+    "correct_index": 2,
+    "difficulty": 3,
+    "explanation": "\"Lofty\" significa elevado ou sublime, mas no contexto de promessas que \"many considered impossible to keep\" assume o sentido de exageradas, grandiosas demais. \"Modestas\" seria o oposto."
+  },
+  {
+    "subject": "ingles",
+    "topic": "Conditionals",
+    "statement": "Escolha a alternativa que completa corretamente a frase: \"If the city ___ more bike lanes, fewer people would drive to work.\"",
+    "alternatives": ["builds", "will build", "has built", "build", "built"],
+    "correct_index": 4,
+    "difficulty": 1,
+    "explanation": "Trata-se de um condicional irreal, o second conditional: if + past simple, would + verbo. Por isso \"built\" é a forma correta; \"builds\" formaria um first conditional, que exigiria \"will drive\" na oração principal."
+  },
+  {
+    "subject": "ingles",
+    "topic": "Inference",
+    "statement": "Leia o texto: \"When the museum announced free entry on Sundays, attendance tripled. However, donations fell, and the director noted that visitors who pay nothing often buy nothing in the gift shop either. The board is now debating whether free Sundays are worth the cost.\" A partir do texto, é correto inferir que",
+    "alternatives": ["free entry raised attendance but brought financial losses that the board is still evaluating.", "the increase in visitors solved the museum's financial problems.", "Sunday visitors bought more in the museum shop.", "the museum has decided to permanently end free entry.", "donations increased along with attendance."],
+    "correct_index": 0,
+    "difficulty": 4,
+    "explanation": "O texto mostra que a frequência triplicou, mas as doações caíram e a loja não vendeu; por isso o conselho \"is now debating\", ou seja, ainda avalia o custo. Dizer que o aumento de público resolveu as finanças contradiz as quedas de doações e vendas, e o texto não afirma que a gratuidade foi encerrada."
+  }
+]

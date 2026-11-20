@@ -1,0 +1,38 @@
+# Dependências
+node_modules/
+.pnpm-store/
+frontend/.vite/
+backend/vendor/
+
+# Builds
+frontend/dist/
+backend/bin/
+backend/api
+backend/api-linux
+
+# Ambiente e segredos
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs e temporários
+*.log
+*.pid
+tmp/
+.tmp/
+
+# Backups de banco
+backups/
+*.dump
+
+# Editores e sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Cobertura de testes
+coverage.out
+coverage.html

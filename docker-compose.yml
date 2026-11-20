@@ -1,0 +1,90 @@
+# Enem Macetado — stack local de produção.
+#
+# Uso: docker compose up -d --build  →  http://localhost:8099
+# Funciona sem .env (todos os valores têm default de desenvolvimento).
+# Para sobrescrever, copie .env.example para .env e ajuste.
+#
+# Serviços:
+#   db  → PostgreSQL 16, exposto apenas em 127.0.0.1:55432 (inspeção local)
+#   api → Go em api:8080, não publicado no host (acesso só via web/Nginx)
+#   web → Nginx com o SPA em http://localhost:8099 (proxy /api e /ws)
+
+name: enem-macetado
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-enem}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-enem_dev_password}
+      POSTGRES_DB: ${POSTGRES_DB:-enem}
+      TZ: ${APP_TIMEZONE:-America/Sao_Paulo}
+      PGTZ: ${APP_TIMEZONE:-America/Sao_Paulo}
+    ports:
+      # Só loopback: banco não fica exposto na rede.
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # $$ escapa a interpolação do Compose: quem expande é o shell do container.
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      TZ: ${APP_TIMEZONE:-America/Sao_Paulo}
+      PORT: ${PORT:-8080}
+      # Derivado dos POSTGRES_* por padrão. Se definir POSTGRES_PASSWORD com
+      # caracteres especiais (@ : / ?), defina DATABASE_URL explicitamente.
+      DATABASE_URL: ${DATABASE_URL:-postgres://${POSTGRES_USER:-enem}:${POSTGRES_PASSWORD:-enem_dev_password}@db:5432/${POSTGRES_DB:-enem}?sslmode=disable}
+      POSTGRES_USER: ${POSTGRES_USER:-enem}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-enem_dev_password}
+      POSTGRES_DB: ${POSTGRES_DB:-enem}
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me-in-production}
+      APP_TIMEZONE: ${APP_TIMEZONE:-America/Sao_Paulo}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8099}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.openai.com/v1}
+      TUTOR_MODEL: ${TUTOR_MODEL:-gpt-4o-mini}
+      STT_ENABLED: ${STT_ENABLED:-false}
+      TTS_ENABLED: ${TTS_ENABLED:-false}
+      TTS_MODEL: ${TTS_MODEL:-gpt-4o-mini-tts}
+      TTS_VOICE: ${TTS_VOICE:-alloy}
+      # Caminho dentro da imagem da API. Não use o valor de dev
+      # (../content/questions.json) aqui: ele não existe no container.
+      SEED_QUESTIONS_PATH: ${SEED_QUESTIONS_PATH:-/app/content/questions.json}
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      # O Dockerfile do backend instala wget (alpine/busybox); se a base mudar,
+      # troque por curl equivalente.
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:$${PORT}/api/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 20s
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    restart: unless-stopped
+    environment:
+      TZ: ${APP_TIMEZONE:-America/Sao_Paulo}
+    ports:
+      - "8099:80"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pgdata:
